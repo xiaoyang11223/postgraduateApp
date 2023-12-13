@@ -52,14 +52,14 @@ LOS = st.sidebar.slider(label='LOS', min_value=1,
                                   value=1,
                                   step=1)
 
-LVEF = st.sidebar.number_input(label='LVEF', min_value=10.0,
-                                  max_value=90.0,
-                                  value=22.0,
-                                  step=1.0)
-LAD = st.sidebar.number_input(label='LAD', min_value=10.0,
-                                  max_value=90.0,
-                                  value=15.0,
-                                  step=1.0)
+LVEF = st.sidebar.number_input(label='LVEF', min_value=10,
+                                  max_value=90,
+                                  value=12,
+                                  step=1)
+LAD = st.sidebar.number_input(label='LAD', min_value=10,
+                                  max_value=90,
+                                  value=15,
+                                  step=1)
 
 
 
