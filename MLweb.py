@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # 页面名称
 st.set_page_config(page_title="Readmission", layout="wide")
 # 标题
-st.title('The machine-learning based model to predict Readmission')
+st.title('Predicting 30-day readmission for older patients with heart failure based on machine learning')
 # 文本
 st.write('This is a web app to predict the prob of Readmission based on\
          several features that you can see in the sidebar. Please adjust the\
@@ -50,10 +50,13 @@ LAD = st.sidebar.number_input(label='LAD', min_value=10.0,
                                   max_value=90.0,
                                   value=15.0,
                                   step=1.0)
-Age = st.sidebar.number_input(label='Age', min_value=65.0,
+
+Age = st.sidebar.slider(label='Age', min_value=65.0,
                                   max_value=100.0,
                                   value=65.0,
                                   step=1.0)
+
+
 LOS = st.sidebar.number_input(label='LOS', min_value=1.0,
                                   max_value=90.0,
                                   value=1.0,
