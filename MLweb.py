@@ -156,7 +156,7 @@ Neu = st.sidebar.number_input(label='Neu', min_value=12.4,
 DBP = st.sidebar.number_input(label='DBP', min_value=24.0,
                                   max_value=150.0,
                                   value=24.0,
-                                  step=1
+                                  step=1.0
                                    )
 
 Uricacid = st.sidebar.number_input(label='Uric.acid', min_value=52.0,
@@ -168,7 +168,7 @@ Uricacid = st.sidebar.number_input(label='Uric.acid', min_value=52.0,
 PLT = st.sidebar.number_input(label='PLT', min_value=1.0,
                                   max_value=220.0,
                                   value=1.0,
-                                  step=1
+                                  step=1.0
                                    )
 
 
