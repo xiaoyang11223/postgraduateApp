@@ -52,7 +52,7 @@ LOS = st.sidebar.slider(label='LOS', min_value=1,
                                   value=1,
                                   step=1)
 
-LVEF = st.sidebar.number_input(label='LVEF', min_value=10,
+LVEF = st.sidebar.slider(label='LVEF', min_value=10,
                                   max_value=90,
                                   value=12,
                                   step=1)
@@ -63,26 +63,26 @@ LAD = st.sidebar.number_input(label='LAD', min_value=10,
 
 
 
-IVST = st.sidebar.number_input(label='IVST', min_value=5.0,
-                                  max_value=20.0,
-                                  value=5.0,
-                                  step=0.1)
+IVST = st.sidebar.number_input(label='IVST', min_value=5,
+                                  max_value=20,
+                                  value=5,
+                                  step=1)
 
-NTproBNP = st.sidebar.number_input(label='NT.proBNP', min_value=5.0,
-                                  max_value=67000.0,
-                                  value=70.0,
-                                  step=100.0
+NTproBNP = st.sidebar.number_input(label='NT.proBNP', min_value=5,
+                                  max_value=67000,
+                                  value=70,
+                                  step=100
                                    )
-Cl = st.sidebar.number_input(label='Cl', min_value=65.0,
-                                  max_value=125.0,
-                                  value=65.0,
-                                  step=1.0
+Cl = st.sidebar.number_input(label='Cl', min_value=65,
+                                  max_value=125,
+                                  value=65,
+                                  step=1
                                    )
 
-APTT = st.sidebar.number_input(label='APTT', min_value=15.0,
-                                  max_value=100.0,
-                                  value=15.0,
-                                  step=1.0
+APTT = st.sidebar.number_input(label='APTT', min_value=15,
+                                  max_value=100,
+                                  value=15,
+                                  step=1
                                    )
 
 LYM = st.sidebar.number_input(label='LYM', min_value=1.0,
