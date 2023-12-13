@@ -57,7 +57,7 @@ Age = st.sidebar.slider(label='Age', min_value=65.0,
                                   step=1.0)
 
 
-LOS = st.sidebar.number_input(label='LOS', min_value=1.0,
+LOS = st.sidebar.slider(label='LOS', min_value=1.0,
                                   max_value=90.0,
                                   value=1.0,
                                   step=1.0)
