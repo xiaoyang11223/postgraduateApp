@@ -42,6 +42,16 @@ model = joblib.load('catb-rfecatb.pkl')##导入相应的模型
 st.sidebar.title("Features")
 
 # 设置各项特征的输入范围和选项
+Age = st.sidebar.slider(label='Age', min_value=65,
+                                  max_value=100,
+                                  value=65,
+                                  step=1)
+
+LOS = st.sidebar.slider(label='LOS', min_value=1,
+                                  max_value=90,
+                                  value=1,
+                                  step=1)
+
 LVEF = st.sidebar.number_input(label='LVEF', min_value=10.0,
                                   max_value=90.0,
                                   value=22.0,
@@ -51,16 +61,8 @@ LAD = st.sidebar.number_input(label='LAD', min_value=10.0,
                                   value=15.0,
                                   step=1.0)
 
-Age = st.sidebar.slider(label='Age', min_value=65,
-                                  max_value=100,
-                                  value=65,
-                                  step=1)
 
 
-LOS = st.sidebar.slider(label='LOS', min_value=1,
-                                  max_value=90,
-                                  value=1,
-                                  step=1)
 IVST = st.sidebar.number_input(label='IVST', min_value=5.0,
                                   max_value=20.0,
                                   value=5.0,
