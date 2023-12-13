@@ -179,8 +179,8 @@ PLT = st.sidebar.number_input(label='PLT', min_value=1.0,
 
 
 
-features = {'LVEF': LVEF, 'LAD': LAD,
-            'Age': Age, 'LOS': LOS,
+features = {'Age': Age, 'LOS': LOS,
+            'LVEF': LVEF, 'LAD': LAD,
             'IVST': IVST, 'NT.proBNP': NTproBNP,
             'Cl': Cl, 'APTT': APTT,
             'LYM': LYM, 'ALT': ALT,
