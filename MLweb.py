@@ -51,16 +51,16 @@ LAD = st.sidebar.number_input(label='LAD', min_value=10.0,
                                   value=15.0,
                                   step=1.0)
 
-Age = st.sidebar.slider(label='Age', min_value=65.0,
-                                  max_value=100.0,
-                                  value=65.0,
-                                  step=1.0)
+Age = st.sidebar.slider(label='Age', min_value=65,
+                                  max_value=100,
+                                  value=65,
+                                  step=1)
 
 
-LOS = st.sidebar.slider(label='LOS', min_value=1.0,
-                                  max_value=90.0,
-                                  value=1.0,
-                                  step=1.0)
+LOS = st.sidebar.slider(label='LOS', min_value=1,
+                                  max_value=90,
+                                  value=1,
+                                  step=1)
 IVST = st.sidebar.number_input(label='IVST', min_value=5.0,
                                   max_value=20.0,
                                   value=5.0,
@@ -198,7 +198,7 @@ st.table(features_df)
 #显示预测结果与shap解释图
 if st.button('Predict'):
     prediction = predict_quality(model, features_df)
-    st.write("the probability of Readmission:")
+    st.write("The probability of Readmission:")
     st.success(round(prediction[0], 4))
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(features_df)
